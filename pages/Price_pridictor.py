@@ -3,14 +3,13 @@ import pickle
 import pandas as pd
 import numpy as np
 st.set_page_config(page_title="Viz Demo")
-
+from joblib import load
 # property_type	sector	bedRoom	bathroom	balcony	agePossession	built_up_area	servant room	store room	furnishing_type	luxury_category	floor_category
 
 with  open('df.pkl','rb') as file:
     df=pickle.load(file)
 
-with  open('pipeline.pkl','rb') as file:
-    pipeline=pickle.load(file)
+pipeline = load('pipeline.pkl')
 
 st.header("Enter Your Inputs")
 
