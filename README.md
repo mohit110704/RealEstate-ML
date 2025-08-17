@@ -67,6 +67,38 @@ This project is about predicting the prices of properties in Gurugram using mach
 - Built a **Streamlit web app** for users to input property features and get predicted prices.
 - The app also shows analytics and visualizations of the data.
 
+## 7. Analytics Module & Prediction
+
+After deployment, the Streamlit app includes a comprehensive **Analytics Module** with the following features:
+
+### Analytics Visualizations:
+- **Sector-wise Price per Sqft GeoMap** – Shows how price per sqft varies across different sectors in Gurugram.  
+- **Features WordCloud** – Highlights the most common property features.  
+- **Area vs Price Scatterplot** – Visualizes the relationship between property area and price.  
+- **BHK Pie Chart** – Shows the percentage of properties with different number of bedrooms in each sector.  
+- **Side-by-Side BHK Price Comparison (Box Plot)** – Compares prices for different BHK properties across sectors.  
+- **Price Distribution: Flat vs House** – Shows how prices differ between flats and houses.
+
+### Prediction Module:
+- Users can enter property details such as:  
+  - Property Type  
+  - Sector  
+  - Number of Bedrooms  
+  - Number of Bathrooms  
+  - Balconies  
+  - Age of Property  
+  - Built-Up Area (in sqft)  
+  - Servant Room  
+  - Store Room  
+  - Furnishing Type  
+  - Luxury Type  
+  - Floor Type  
+
+- The module predicts the **expected price range** using the trained model (XGBoost).  
+- The predicted price is shown as a **range**, e.g., 22 Lacs ± a certain value, along with the **Mean Squared Error (MSE)** to indicate accuracy.  
+
+This module allows users to **quickly estimate property prices** and analyze trends across Gurugram sectors in an interactive way.
+
 ## What I Learned
 - How to collect and clean real-world data from websites.
 - How to handle missing values and outliers effectively.
@@ -86,4 +118,18 @@ This project is about predicting the prices of properties in Gurugram using mach
 - Provides a visual understanding of property trends in Gurugram.
 - Shows a complete workflow of a real-world data science project from data collection to deployment.
 
+## Conclusion
+This project successfully demonstrates an **end-to-end workflow** of a real-world data analysis project with ML for predicting property prices in Gurugram.  
+
+Key outcomes:  
+- Built a **robust ML model** (XGBoost) achieving **high accuracy** (R² = 0.90, MAE = 0.44).  
+- Gained insights into **property trends**, such as how area, location, and amenities affect prices.  
+- Developed a **user-friendly Streamlit app** for price prediction and analytics.  
+
+Future improvements could include:  
+- Collecting **more data** from additional sources to improve model accuracy.  
+- Incorporating **temporal trends** (price changes over time) for better predictions.  
+- Adding **more interactive visualizations** in the app for enhanced user experience.  
+
+Overall, this project provides **practical insights** for buyers, sellers, and real estate analysts while showcasing skills in **data collection, cleaning, feature engineering, machine learning, and deployment**.
 
